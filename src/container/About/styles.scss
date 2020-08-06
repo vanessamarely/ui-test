@@ -1,0 +1,14 @@
+.about {
+    padding: 5%;
+    &__content {
+        background-color: #ebebeb;
+        padding: 20px;
+        position: relative;
+        &__button {
+            border: 0;
+            position: absolute;
+            right: 5%;
+            top: 40%;
+        }
+    }
+}

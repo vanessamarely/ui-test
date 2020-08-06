@@ -1,0 +1,89 @@
+.home {
+  padding: 5%;
+  &__message {
+    align-items: center;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    p {
+      margin: 0;
+    }
+    &__left {
+      width: 100%;
+      .text {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .strong-text {
+        font-size: 25px;
+        font-weight: 700;
+      } 
+    }
+    &__right {
+      width: 100%;
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &__button {
+      background-color: transparent;
+      border: 0;
+      color: #494949;
+      font-size: 20px;
+      position: absolute;
+      right: 10px;
+    }
+  }
+  &__votes {
+    margin: 40px 0 20px;
+    h3 {
+      font-size: 40px;
+      font-weight: 300;
+    }
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__subscribe {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(219, 219, 219, 0.73)), url('../../assets/images/subscribe.png');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    p {
+      align-self: center;
+      font-weight: 300;
+      font-size: 25px;
+      height: 100%;
+      margin: 0;
+    }
+    button {
+      border: 2px solid #333333;
+      background-color: transparent;
+      font-size: 20px;
+      font-weight: 400;
+      width: 200px;
+    }
+  }
+}
+
+
+@media (min-width:960px) {
+  .home {
+    &__message {
+      flex-direction: row;
+      &__left {
+        width: 25%;
+      }
+      &__right {
+        width: 70%;
+      }
+    }
+  }
+}

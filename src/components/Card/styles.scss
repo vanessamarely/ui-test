@@ -1,0 +1,196 @@
+.card {
+  background-image: linear-gradient(to bottom, rgba(146, 146, 146, 0.14), rgba(171, 171, 171, 0.65));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4%;
+  min-height: 70vh;
+  position: relative;
+  width: 100%;
+  &__backdrop {
+    background-image: linear-gradient(to bottom, rgba(146, 146, 146, 0.14), rgba(171, 171, 171, 0.65));
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  &__image-bg {
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  &__character {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &__title {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 40px;
+      margin: 0;
+      margin-top: 45vh;
+      padding: 0 30px;
+      position: relative;
+      z-index: 1;
+    }
+    &__subtitle {
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 5px 30px;
+    }
+    &__icon {
+      left: 0;
+      position: absolute;
+      top: 61.5%;
+      .icons-style {
+        font-size: 1.3em;
+        height: 23px;
+        padding: 5px;
+        width: 20px;
+        &.like-icon {
+          background-color: var(--vote-up);
+        }
+        &.dislike-icon {
+          background-color: var(--vote-down);
+        }
+      }
+    }
+    &__text {
+      color: white;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 16px;
+      margin: 0;
+      padding: 20px;
+      z-index: 1;
+    }
+    &__details {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      margin: 0;
+      padding: 0 20px;
+      z-index: 1;
+      button {
+        background: transparent;
+        border: 0;
+        color: white;
+        font-size: 1.5em;
+        height: 40px;
+        margin-right: .3em;
+        order: 1;
+        padding: .3em;
+        width: 40px;
+        &.button-like {
+          background-color: var(--vote-up);
+        }
+        &.button-dislike {
+          background-color: var(--vote-down);
+        }
+        &:active,
+        &:focus {
+          border: 2px solid white;
+          outline: none;
+        }
+      }
+      .vote-button {
+        order: 2;
+        button {
+          background-color: transparent;
+          border: 1px solid white;
+          color: white;
+          font-size: 1em;
+          height: 45px;
+          margin: 0 auto;
+          min-width: 120px;
+          padding: .2em;
+        }
+      }
+    }
+  }
+  &__vote {
+    
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-top: 5%;
+    position: relative;
+    z-index: 1;
+    &.voted {
+      border: 1px solid white;
+    }
+    &__progressBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 100px;
+      width: 100%;
+      z-index: 1;
+      &--likes {
+        align-self: flex-start;
+        background-color: var(--vote-up);
+        height: 100%;
+        margin: 0px;
+        order: 1;
+        padding: 0px;
+        width: 0%;
+      }
+      &--dislikes {
+        align-self: flex-end;
+        background-color: var(--vote-down);
+        margin: 0px;
+        height: 100%;
+        order: 2;
+        padding: 0px;
+        width: 0%;
+      }
+    }
+    &__buttons {
+      bottom: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      .button-container {
+        background-color: transparent;
+        border: 0;
+        color: white;
+        font-size: 25px;
+        height: 100%;
+        min-width: 40px;
+        padding: 5px .5em 0;
+        z-index: 2;
+        &.like {
+          align-items: flex-start;
+        }
+        &.dislike {
+          align-items: flex-end;
+        }
+        .percentage {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:960px) {
+  .card {
+    width: 48%;
+    &__character {
+      &__title {
+        font-size: 2rem;
+      }
+    }
+  }
+}

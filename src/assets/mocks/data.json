@@ -1,0 +1,42 @@
+[
+  { 
+    "voteState": true,
+    "category": "Entertainment",
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "dislikes" : 0,
+    "id": "elem1",
+    "likes" : 0,
+    "name": "Kanye West",
+    "picture": "character1.png"
+  },
+  { 
+    "voteState": true,
+    "category": "Business",
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "dislikes" : 0,
+    "id": "elem2",
+    "likes" : 0,
+    "name": "Mark Zuckerberg",
+    "picture": "character2.png"
+  },
+  { 
+    "voteState": true,
+    "category": "Politics",
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "dislikes" : 0,
+    "id": "elem3",
+    "likes" : 0,
+    "name": "Cristina Fernández de Kirchner",
+    "picture": "character3.png"
+  },
+  { 
+    "voteState": true,
+    "category": "Entertainment",
+    "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+    "dislikes" : 0,
+    "id": "elem4",
+    "likes" : 0,
+    "name": "Malala Yousafzai",
+    "picture": "character4.png"
+  }
+]

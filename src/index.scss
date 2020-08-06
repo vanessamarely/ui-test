@@ -1,0 +1,21 @@
+*,
+html,
+body {
+  color: #333333;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* variables */
+:root {
+  --vote-up: #32c2bb;
+  --vote-down: #feb432;
+
+}
+
+p {
+  margin: 0;
+}
+
